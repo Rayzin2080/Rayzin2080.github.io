@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<ul>
+  <li><a href="KSP">Kerbal Space Program</a></li>
+  <li><a href="Robot">Robot Program</a></li>
+  <li><a href="dirt.html">Dirt Sales</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+</html>
+  <style>
+html {
+	background-color: lightgrey;
+}
+	  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+	background-color: #f1f1f1;
+}
+     li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	  }
+  </style>
