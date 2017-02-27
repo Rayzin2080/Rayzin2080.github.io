@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+	</head>
   <title>
     Ryan's Site/Dirt
     </title>
-  <ul>
-  <li><a href="index.html">Home</a></li>
-  </ul>
+  <div><a href="index.html">Home</a></div>
 <header>
   <center>
     <h1>
@@ -70,17 +72,20 @@ AND MANY MORE!!
 </body>
 </html>
 <style>
-	  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-	background-color: #f1f1f1;
+ a{
+  color: black; 
+   font-family: 'Press Start 2P', serif;
+ text-decoration: none;
 }
-     li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-	  }
+     div {
+text-align: center;
+    width: 200px;
+    background-color: Gainsboro;
+	transition: background-color 2s;
+    transition: width 2s;
+    }
+   div:hover { 
+	background-color: Grey;
+  width: 201px;
+ }
   </style>
