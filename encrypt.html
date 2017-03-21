@@ -9,11 +9,18 @@
 	</title>
   <a href="index.html"><div>BACK TO HOME</div></a>
 <script src="https://crypto.stanford.edu/sjcl/sjcl.js">
+program();
+
+function program() {
   var encryptOrDecrypt = prompt("Encrypt or Decrypt? (E/D)");
 
   if (encryptOrDecrypt == "E") {
     var toEncrypt = prompt("What to encrypt?");
 
+    if (toEncrypt == "") {
+      alert("ERR: NO MESSAGE!");
+      program();
+    }
     var pass = prompt("Encryption Key?");
 
     var encrypted = sjcl.encrypt(pass, toEncrypt);
@@ -29,7 +36,11 @@
     var decrypted = sjcl.decrypt(passWd, cTD);
     alert(decrypted);
   }
-
+  if (encryptOrDecrypt == "") {
+    alert("ERR: NO OPTION SELECTED!");
+    program();
+  }
+}
 </script>
 </html>
 <style>
